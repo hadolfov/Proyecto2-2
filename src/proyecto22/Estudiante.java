@@ -9,6 +9,7 @@ package proyecto22;
  *
  * @author Laboratorio CISCO
  */
-public class Estudiante {
+public class Estudiante extends Persona{
+    private String nota;
     
 }

@@ -9,6 +9,7 @@ package proyecto22;
  *
  * @author Laboratorio CISCO
  */
-public class Profesor {
+public class Profesor extends Persona{
+    private String horario;
     
 }
