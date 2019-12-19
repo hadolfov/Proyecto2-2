@@ -10,11 +10,18 @@ package proyecto22;
  * @author Laboratorio CISCO
  */
 public class Estudiante extends Persona{
-    private final String nota;
+    private String nota;
 
-    public Estudiante(String nombre, String apellido, String edad, String sexo,String nota) {
+    public Estudiante(String nombre, String apellido, String edad, String sexo, String nota) {
         super(nombre, apellido, edad, sexo);
         this.nota = nota;
     }
+
+    public String getNota() {
+        return this.nota;
+    }
     
+    public void setNota(String nota){
+        this.nota = nota;
+    }
 }
