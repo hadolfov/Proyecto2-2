@@ -17,6 +17,15 @@ public class Persona {
     private String edad;
     private String sexo;
 
+    public Persona(String nombre, String apellido, String edad, String sexo) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+        this.sexo = sexo;
+    }
+    
+    
+
     public ArrayList<String> getTodo() {
         ArrayList<String> a = new ArrayList();
         a.add(nombre);
