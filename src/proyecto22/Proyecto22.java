@@ -25,6 +25,10 @@ public class Proyecto22 {
         String tecla;
         
         do {
+            
+            Lista lista = new Lista();
+            Estudiante e = new Estudiante("-", "-", "-", "-", "-");
+           lista.agregar(e);
            
             System.out.print("Digite el nombre: ");
             String nombre = lector.next();
