@@ -5,7 +5,7 @@
  */
 package proyecto22;
 
-import java.util.ArrayList;
+//import java.util.ArrayList;
 
 /**
  *
@@ -16,6 +16,10 @@ public class Persona {
     private String apellido;
     private String edad;
     private String sexo;
+    
+    public Persona(){
+        
+    }
 
     public Persona(String nombre, String apellido, String edad, String sexo) {
         this.nombre = nombre;
@@ -23,23 +27,17 @@ public class Persona {
         this.edad = edad;
         this.sexo = sexo;
     }
-    
-    
 
-    public ArrayList<String> getTodo() {
-        ArrayList<String> a = new ArrayList();
-        a.add(nombre);
-        a.add(apellido);
-        a.add(edad);
-        a.add(sexo);
-        return a;
-    }
-
-    public void setTodo(String nombre, String apellido, String edad, String sexo) {
+    public void setPersona(String nombre, String apellido, String edad, String sexo) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
-        
+        this.sexo = sexo;
+    }
+    
+    public Persona getPersona(){
+        Persona p = new Persona(nombre, apellido, edad, sexo);
+        return p;
     }
     
     public String getNombre() {
