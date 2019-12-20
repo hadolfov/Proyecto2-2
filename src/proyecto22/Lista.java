@@ -12,9 +12,22 @@ import java.util.ArrayList;
  * @author hadol
  */
 public class Lista {
-    ArrayList<Persona> lista = new ArrayList<>();
+    ArrayList<Persona> lista = new ArrayList<>(2);
     
-    public void agregar(Persona p){
+    
+    public Lista(){
+        ArrayList<Estudiante> estudiantes = new ArrayList<>();
+        ArrayList<Profesor> Profesores    = new ArrayList<>();
+        lista[0] = estudiantes();
+        lista[1] = Profesores;
+    }
+    
+    public void agregar(Estudiante e){
+        this.lista.get(0)..add(e);
+        
+    }
+    
+    public void agregar(Profesor p){
         this.lista.add(p);
     }
     
@@ -24,14 +37,15 @@ public class Lista {
         { 
             if (this.lista.get(i).getNombre().equals(nomb)){
                 if (this.lista.get(i).getClass().equals(Estudiante.class)){
-                    Estudiante p = new Estudiante(this.lista.get(i).getNombre(), this.lista.get(i).getApellido(), this.lista.get(i).getEdad(), this.lista.get(i).getSexo(), this.lista.get(i).);
+                    this.lista.get(i).
+                    Estudiante p = new Estudiante(super.lista.get(i).getNombre(), super.lista.get(i).getApellido(), super.lista.get(i).getEdad(), super.lista.get(i).getSexo(), this.lista.get(i).);
                 } else {
                     
                 }
                 
                 
             } else {
-                //Persona p = new Persona("-", "-", "-", "-");
+
             }
         }
         return p;
