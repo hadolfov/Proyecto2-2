@@ -25,6 +25,20 @@ public class Proyecto22 {
         String tecla;
         
         do {
+            System.out.print("A). Agregar");
+            System.out.print("B). Buscar");
+            System.out.print("E). Eliminar");
+            tecla = lector.next().substring(0, 1).toUpperCase();
+            switch (tecla){
+                case "A":
+                    break;
+                case "B":
+                    break;
+                case "E":
+                    break;
+                default:
+                    break;
+            }
             
             Lista lista = new Lista();
             Estudiante e = new Estudiante("-", "-", "-", "-", "-");
